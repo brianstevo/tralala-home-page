@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e4de6e1dd7.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+        <nav>
+            <ul>
+                <li><i class="fas fa-home"></i></li>
+                <li><i class="fas fa-list"><span class="bt">Boards</span></i></li>
+                <li><input type="text" name="text"></li>
+                <p class="mid">Tralala</p>
+                <li class="end"><i class="fas fa-plus"></i></li>
+                <li><i class="fas fa-user"></i></li>
+            </ul>
+        </nav>
+        <div class="title">
+            <p>Frontend training</p>
+            <div class="title-end"><i class="fas fa-ellipsis-v"></i>
+            <p>Show menu</p></div>
+        </div>
+
+
+        <div class="container">
+            <div class="card">
+                <div class="cardheader">
+                <p>To Do</p>
+                <img src="ellipsis-h-solid.svg" alt=""> </div>  
+                <div class="activecontent"><span>Learn HTML</span><span class="pen"><i class="fas fa-pencil-alt"></i></span></div>
+                <div class="activecontent"><span>Learn CSS</span><span class="pen"><i class="fas fa-pencil-alt"></i></span></div>
+                <p>+ Add another card</p>
+            </div>
+            <div class="card">
+                <div class="cardheader">
+                    <p>Doing</p>
+                    <img src="ellipsis-h-solid.svg" alt=""> </div>
+                    <div class="activecontent"><span>Prepare resume</span><span class="pen"><i class="fas fa-pencil-alt"></i></span></div>
+                    <textarea placeholder="Enter the title for this card ..."></textarea>
+                    <div class="btn-container">
+                        <button>Add Card</button>
+                        <span><i class="fas fa-times"></i></span>
+                    </div>
+            </div>
+
+
+            <div class="card">
+                <div class="cardheader">
+                    <p>Testing/Verifying</p>
+                    <img src="ellipsis-h-solid.svg" alt=""> </div>
+                    <div class="activecontent"><span>Twitter app frontend</span><span class="pen"><i class="fas fa-pencil-alt"></i></span></div>
+                    <p>+ Add another card</p>
+            </div>
+            <div class="card">
+                <div class="cardheader">
+                    <p>Deploying</p>
+                    <img src="ellipsis-h-solid.svg" alt=""> </div>
+                    <div class="activecontent"><span>Twitter app backend</span><span class="pen"><i class="fas fa-pencil-alt"></i></span></div>
+                    <p>+ Add another card</p>
+            </div>
+
+
+            <div class="card">
+                <div class="cardheader">
+                    <p>Done</p>
+                    <img src="ellipsis-h-solid.svg" alt=""> </div>
+                <p>+ Add card</p>
+            </div>
+            <div class="card">
+                <p>+ Add another list</p>
+            </div>
+
+            <div class="card">
+                <textarea placeholder="Enter list title ..."></textarea>
+                <div class="btn-container">
+                    <button>Add List</button>
+                    <span><i class="fas fa-times"></i></span>
+                </div>
+            </div>
+            
+        </div>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+        }
+        li{
+            list-style: none;
+        }
+        body{
+            background-image: url("bg-rain-drops-on-window-shield.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            background-attachment: fixed;
+        }
+        nav > ul{
+            display: flex;
+            background-color: rgba( 64, 144, 172, 0.65 );
+            align-items: center;
+            color: white;
+            padding:0 10px ;
+            height: 60px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        .mid{
+            margin: 0 auto;
+            font-size: 22px;
+        }
+        .end{
+            margin-left: auto;
+        }
+        li{
+            margin: 10px;
+        }
+        input {
+            background-color:rgba( 64, 144, 172, 1 );
+            border: none;
+            padding: 7px 0;
+            font-size: 15px;
+            color: black;
+            width: 120px;
+            line-height: 1.4;
+            border-radius: 2px;
+            outline: none;
+        }
+        input:focus{
+            background-color: white;
+        }
+        ul li i{
+            padding: 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            background-color: rgba( 64, 144, 172, 1);
+        }
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            font-size: 18px;
+            color: white;
+            background-color: rgba( 128, 128, 128, 0.3 );
+            position: fixed;
+            top: 60px;
+            left: 0;
+            right: 0;
+        }
+        .title p{
+            margin: 0 10px;
+        }
+        .title-end{
+            display: flex;
+        }
+        .bt{
+            margin-left: 5px;
+        }
+        .fas{
+            font-size: 20px;
+        }
+        .container{
+            display: flex;
+            width: 100vw;
+            padding: 0 20px;
+            margin:150px auto;
+            align-items: flex-start;
+        }
+        .card{
+            background-color: #eeeeee;
+            min-width: 280px;
+            flex-basis: 100%;
+            margin-right: 15px;
+            border-radius: 4px;
+            padding:0 10px;
+        }
+        .activecontent{
+            padding:10px;
+            background-color: white;
+            margin-top: 10px;
+            opacity: .7;
+        }
+        .activecontent::after{
+            clear: both;
+        }
+        .pen{
+            visibility: hidden; 
+            margin-left: auto;
+            float: right;
+        }
+        .pen:hover{
+            opacity: .4;
+        }
+        .activecontent:hover .pen{
+            visibility:visible;
+            opacity: .7;
+        }
+        .cardheader{
+            padding-top: 13px;
+        }
+        .cardheader{
+            display:flex;
+            justify-content: space-between;
+        }
+        .cardheader p{
+            margin-left: 2px;
+            font-weight: bold;
+            opacity: .7;
+        }
+        .cardheader img{
+            width:13px;
+            opacity: .7;
+            margin-right: 5px;
+        }
+        .card > p{
+            padding: 8px 0;
+            font-size: 15px;
+            opacity: .7;
+        }
+        textarea{
+            resize: none;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin:10px 0;
+            border: 1px solid lightgrey;
+            border-radius: 2px;
+        }
+        button{
+            padding: 12px;
+            color: white;
+            font-size: 18px;
+            border-radius: 3px;
+            border: none;
+            background-color: olive;
+        }
+        .btn-container{
+            margin-bottom: 10px;
+        }
+        .btn-container > span > .fas{
+            font-size: 35px;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+    </style>
+</body>
+</html>
